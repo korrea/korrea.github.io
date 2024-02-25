@@ -9,12 +9,12 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #121212; /* Color base Carbonswarz */
-            color: white;
+            background-color: #f0f5f9; /* Azul clarito */
+            color: #333; /* Texto oscuro */
         }
         .header {
             height: 100px; /* Ajuste de altura del área del logotipo */
-            background-color: #242424; /* Color de la cabecera */
+            background-color: #f6c90e; /* Amarillo suave */
             display: flex;
             align-items: center;
             justify-content: center; /* Centrar el logotipo horizontalmente */
@@ -34,13 +34,13 @@
         }
         .links {
             flex: 0 0 20%; /* Establecer el ancho del área de enlaces */
-            background-color: #333; /* Color de fondo del área de enlaces */
+            background-color: #b8d8e0; /* Azul claro */
             padding: 20px;
-            border-right: 1px solid #666; /* Divisoria entre las columnas */
+            border-right: 1px solid #ccc; /* Divisoria entre las columnas */
         }
         .links h2 {
             font-size: 20px;
-            color: #FFA500; /* Color del título de enlaces */
+            color: #333; /* Texto oscuro */
         }
         .links ul {
             list-style-type: none;
@@ -50,22 +50,27 @@
             margin-bottom: 10px;
         }
         .links a {
-            color: #CCCCCC; /* Color de los enlaces */
+            color: #4a90e2; /* Azul medio */
             text-decoration: none;
+            display: block; /* Hacer que el enlace ocupe todo el ancho del contenedor */
         }
         .links a:hover {
-            color: #FFFFFF; /* Color de los enlaces al pasar el cursor */
+            color: #1e6edc; /* Azul más oscuro al pasar el cursor */
         }
         .block {
-            background-color: #222; /* Color de fondo de los bloques */
+            background-color: #fff; /* Fondo blanco para los bloques */
             padding: 20px;
             margin-bottom: 20px;
+            border-radius: 5px; /* Bordes redondeados */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra suave */
         }
         .block h2 {
             font-size: 24px;
+            color: #333; /* Texto oscuro */
         }
         .block p {
             font-size: 16px;
+            color: #666; /* Texto gris */
         }
         .block img {
             max-width: 100%;
@@ -87,9 +92,8 @@
         <div class="column links">
             <h2>Enlaces</h2>
             <ul>
-                <li><a href="#">Enlace 1</a></li>
-                <li><a href="#">Enlace 2</a></li>
-                <li><a href="#">Enlace 3</a></li>
+                <li><a href="https://discord.gg/s7KRUqCW">Discord E69</a></li>
+				<li><a href="https://discord.gg/xRwxQHR8">Discord Amigos</a></li>
                 <!-- Agrega más enlaces según sea necesario -->
             </ul>
         </div>
@@ -103,12 +107,12 @@
             <div class="block">
                 <h2>Actividades</h2>
                 <p>Texto sobre las actividades del Escuadrón69...</p>
-                <img src="ruta-a-la-imagen.jpg" alt="Actividades">
+                <img src="imagenes/Escudo69.png" alt="Actividades">
             </div>
             <div class="block">
                 <h2>Amigos</h2>
                 <p>Texto sobre los amigos del Escuadrón69...</p>
-                <img src="ruta-a-la-imagen.jpg" alt="Amigos">
+                <img src="imagenes/LogoAguila.gif" alt="Amigos">
             </div>
         </div>
     </div>
