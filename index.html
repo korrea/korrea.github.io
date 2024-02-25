@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escuadrón69</title>
+    <title>Escuadrón 69</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #333; /* Color base Carbonswarz */
+            background-color: #121212; /* Color base Carbonswarz */
             color: white;
         }
         .header {
-            height: 75px;
-            background-color: #222; /* Color de la cabecera */
+            height: 100px; /* Ajuste de altura del área del logotipo */
+            background-color: #242424; /* Color de la cabecera */
             display: flex;
             align-items: center;
-            padding: 0 20px;
+            justify-content: center; /* Centrar el logotipo horizontalmente */
         }
         .header img {
-            height: 50px; /* Altura del logotipo */
+            max-width: 100%; /* Ajuste para que la imagen del logotipo ocupe todo el ancho disponible */
+            max-height: 100px; /* Ajuste de altura máxima */
         }
         .content {
             display: flex;
@@ -31,8 +32,29 @@
             flex: 1;
             padding: 0 10px;
         }
-        .column:first-child {
+        .links {
+            flex: 0 0 20%; /* Establecer el ancho del área de enlaces */
+            background-color: #333; /* Color de fondo del área de enlaces */
+            padding: 20px;
             border-right: 1px solid #666; /* Divisoria entre las columnas */
+        }
+        .links h2 {
+            font-size: 20px;
+            color: #FFA500; /* Color del título de enlaces */
+        }
+        .links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .links li {
+            margin-bottom: 10px;
+        }
+        .links a {
+            color: #CCCCCC; /* Color de los enlaces */
+            text-decoration: none;
+        }
+        .links a:hover {
+            color: #FFFFFF; /* Color de los enlaces al pasar el cursor */
         }
         .block {
             background-color: #222; /* Color de fondo de los bloques */
@@ -62,23 +84,21 @@
     <!-- Contenido -->
     <div class="content">
         <!-- Columna 1 -->
-        <div class="column">
-            <div class="block">
-                <h2>Enlaces</h2>
-                <ul>
-                    <li><a href="#">Enlace 1</a></li>
-                    <li><a href="#">Enlace 2</a></li>
-                    <li><a href="#">Enlace 3</a></li>
-                    <!-- Agrega más enlaces según sea necesario -->
-                </ul>
-            </div>
+        <div class="column links">
+            <h2>Enlaces</h2>
+            <ul>
+                <li><a href="#">Enlace 1</a></li>
+                <li><a href="#">Enlace 2</a></li>
+                <li><a href="#">Enlace 3</a></li>
+                <!-- Agrega más enlaces según sea necesario -->
+            </ul>
         </div>
         <!-- Columna 2 -->
         <div class="column">
             <div class="block">
                 <h2>Historia del E69</h2>
                 <p>Texto sobre la historia del Escuadrón69...</p>
-                <img src="ruta-a-la-imagen.jpg" alt="Historia del E69">
+                <img src="imagenes/Historia.jpg" alt="Historia del E69">
             </div>
             <div class="block">
                 <h2>Actividades</h2>
